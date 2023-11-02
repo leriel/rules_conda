@@ -12,6 +12,7 @@ py_runtime(
     python_version = "PY{py_major}",
     stub_shebang = "#!/usr/bin/env -S {external_path}/conda/conda/bin/conda run -p {external_path}/env/env python3",
 )
+exports_files(["{env_path}"])
 """
 
 def _label_from_condabin(rctx, exe_name):
