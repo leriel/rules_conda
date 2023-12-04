@@ -1,0 +1,8 @@
+channels:
+  - default
+  - conda-forge
+dependencies:
+  - python==3.9.7
+  - pip==21.2.4
+  - tesseract==5.3.2
+  - pytesseract==0.3.13
