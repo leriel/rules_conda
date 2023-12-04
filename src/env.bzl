@@ -10,7 +10,7 @@ py_runtime(
     files = glob(["{env_path}/**/*"], exclude_directories = 0),
     interpreter = "{env_path}/{interpreter_path}",
     python_version = "PY{py_major}",
-    stub_shebang = "#!/usr/bin/env -S {external_path}/conda/conda/bin/conda run -p {external_path}/env/env python3",
+    stub_shebang = "#!/usr/bin/env -S {external_path}/conda/conda/bin/conda run -p {external_path}/{env_path}/{env_path} python3",
 )
 """
 
